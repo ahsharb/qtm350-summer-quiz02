@@ -1,0 +1,37 @@
+---
+title: "Life Expectancy vs. Population"
+---
+
+This page the relationship between life expectancy and population. 
+
+```{python}
+#| label: Population-lifeexpectancy-plot
+#| echo: true
+#| warning: false
+#| message: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the data
+gapminder = pd.read_csv("gapminder.csv")
+
+# Create scatter plot with color by continent and size by GDP
+plt.figure(figsize=(12, 8))
+sns.scatterplot(
+    data=gapminder, 
+    x="population_millions", 
+    y="life_expectancy", 
+    hue="continent",
+    size="gdp_per_capita",
+    sizes=(20, 500),
+    alpha=0.7
+)
+
+# Set plot labels and title
+plt.xlabel('Population')
+plt.ylabel('Life Expectancy')
+plt.title('Life Expectancy vs Population')
+plt.show()
+```

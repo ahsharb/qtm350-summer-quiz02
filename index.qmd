@@ -1,0 +1,10 @@
+---
+title: "qtm350-Gapminder Analysis"
+---
+
+This is a Quiz 2. In this quiz I will analysis the gapminder dataset which shows the country, continnent, year, life expectancy, population and GDP of various countries. 
+
+See the Analysis Here: 
+- [Life Expectancy and GDP per Capita](life-gdp.qmd)
+- [Life Expectancy and Population](life-population.qmd)
+- [Country Analysis](country.qmd)

@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "qtm350-summer-quiz02-1"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: life-gdp.qmd
+        text: Life Expectancy and GDP per Capita
+      - href: life-population.qmd
+        text: Life Expectancy and Population
+      - href: country.qmd
+        text: Country Analysis
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - minty
+      - brand
+    css: styles.css
+    toc: true
+
+
+
